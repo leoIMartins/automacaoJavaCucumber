@@ -67,15 +67,15 @@ public class inserirContaSteps {
 		Assert.assertEquals("Conta adicionada com sucesso!", texto);
 	}
 
-	@Então("^sou notificar que o nome da conta é obrigatório$")
+	@Então("^sou notificado que o nome da conta é obrigatório$")
 	public void sou_notificar_que_o_nome_da_conta_é_obrigatório() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		String texto = driver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
+		Assert.assertEquals("Informe o nome da conta", texto);
 	}
 
 	@Então("^sou notificado que já existe uma conta com esse nome$")
 	public void sou_notificado_que_já_existe_uma_conta_com_esse_nome() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		String texto = driver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
+		Assert.assertEquals("Já existe uma conta com esse nome!", texto);
 	}
 }
