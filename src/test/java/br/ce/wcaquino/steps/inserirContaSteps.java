@@ -16,7 +16,7 @@ public class inserirContaSteps {
 	private WebDriver driver;
 	@Dado("^que estou acessando a aplicação$")
 	public void que_estou_acessando_a_aplicação() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\leona\\Downloads\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\leonardo.martins\\Downloads\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://srbarriga.herokuapp.com");
 	}
@@ -91,8 +91,8 @@ public class inserirContaSteps {
 		System.out.println("Começando aqui");
 	}
 	
-	@After
+	/*@After
 	public void fecharBrowser() {
 		driver.quit();
-	}
+	}*/
 }
