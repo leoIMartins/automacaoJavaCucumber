@@ -24,6 +24,7 @@ public class RunnerTest {
 
 	@BeforeClass
 	public static void reset() {
+		System.setProperty("webdriver.chrome.driver", "path/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://srbarriga.herokuapp.com");
 		driver.findElement(By.id("email")).sendKeys("leonardo_ignacio2010@hotmail.com");
@@ -31,7 +32,6 @@ public class RunnerTest {
 		driver.findElement(By.tagName("button")).click();
 		driver.findElement(By.linkText("reset")).click();
 		driver.quit();
-		
 	}
 	
 }
