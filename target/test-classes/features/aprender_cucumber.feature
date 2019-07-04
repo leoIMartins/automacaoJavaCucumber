@@ -1,4 +1,5 @@
 # language: pt
+@unitários
 @esse
 Funcionalidade: Aprender Cucumber
   Como um aluno

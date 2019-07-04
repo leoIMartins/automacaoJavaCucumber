@@ -1,0 +1,2 @@
+[0703/200353.882:ERROR:crashpad_client_win.cc(505)] CreateProcess: Acesso negado. (0x5)
+[0703/202436.254:ERROR:crashpad_client_win.cc(505)] CreateProcess: Acesso negado. (0x5)

@@ -1,10 +1,17 @@
 package br.ce.wcaquino.steps;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
@@ -86,17 +93,27 @@ public class inserirContaSteps {
 		Assert.assertEquals(arg1, texto);
 	}
 	
-	@Before
+	@Before(order = 10)
 	public void inicio() {
 		System.out.println("Começando aqui");
 	}
 	
-	@After
-	public void screenshot() {
-		
+	@Before(order = 0)
+	public void inicio2() {
+		System.out.println("Começando aqui, parte 2");
 	}
 	
-	@After
+	@After(order = 1, value = {"@funcionais"})
+	public void screenshot(Scenario cenario) {
+		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("target/screenshot/" + cenario.getId() + "nome.jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@After(order = 0, value = {"@funcionais"})
 	public void fecharBrowser() {
 		driver.quit();
 	}
