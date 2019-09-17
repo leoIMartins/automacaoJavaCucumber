@@ -84,7 +84,7 @@ public class inserirContaSteps {
 	@Entao("^sou notificado que ja existe uma conta com esse nome$")
 	public void sou_notificado_que_ja_existe_uma_conta_com_esse_nome() throws Throwable {
 		String texto = driver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
-		Assert.assertEquals("J� existe uma conta com esse nome!", texto);
+		Assert.assertEquals("Já existe uma conta com esse nome!", texto);
 	}
 	
 	@Entao("^recebo a mensagem \"([^\"]*)\"$")

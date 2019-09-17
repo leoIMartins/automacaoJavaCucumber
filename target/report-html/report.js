@@ -83,11 +83,11 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 566600,
+  "duration": 373500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 90500,
+  "duration": 462000,
   "status": "passed"
 });
 formatter.background({
@@ -136,7 +136,7 @@ formatter.match({
   "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
 });
 formatter.result({
-  "duration": 6999499900,
+  "duration": 6613717600,
   "status": "passed"
 });
 formatter.match({
@@ -149,7 +149,7 @@ formatter.match({
   "location": "inserirContaSteps.informo_o_usuario(String)"
 });
 formatter.result({
-  "duration": 225836000,
+  "duration": 366657200,
   "status": "passed"
 });
 formatter.match({
@@ -162,35 +162,35 @@ formatter.match({
   "location": "inserirContaSteps.a_senha(String)"
 });
 formatter.result({
-  "duration": 94837100,
+  "duration": 83702100,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_entrar()"
 });
 formatter.result({
-  "duration": 1010081800,
+  "duration": 632470300,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
 });
 formatter.result({
-  "duration": 49337500,
+  "duration": 56479300,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Contas()"
 });
 formatter.result({
-  "duration": 109432500,
+  "duration": 66365000,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Adicionar()"
 });
 formatter.result({
-  "duration": 420857400,
+  "duration": 337631900,
   "status": "passed"
 });
 formatter.scenario({
@@ -238,14 +238,14 @@ formatter.match({
   "location": "inserirContaSteps.informo_a_conta(String)"
 });
 formatter.result({
-  "duration": 128021700,
+  "duration": 137385100,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Salvar()"
 });
 formatter.result({
-  "duration": 445284600,
+  "duration": 525694900,
   "status": "passed"
 });
 formatter.match({
@@ -258,23 +258,23 @@ formatter.match({
   "location": "inserirContaSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 41365700,
+  "duration": 34575100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 378302100,
+  "duration": 302815700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 687209000,
+  "duration": 847980600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 115600,
+  "duration": 54200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 111900,
+  "duration": 29100,
   "status": "passed"
 });
 formatter.background({
@@ -323,7 +323,7 @@ formatter.match({
   "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
 });
 formatter.result({
-  "duration": 6810692300,
+  "duration": 6366886400,
   "status": "passed"
 });
 formatter.match({
@@ -336,7 +336,7 @@ formatter.match({
   "location": "inserirContaSteps.informo_o_usuario(String)"
 });
 formatter.result({
-  "duration": 180696400,
+  "duration": 190537200,
   "status": "passed"
 });
 formatter.match({
@@ -349,35 +349,35 @@ formatter.match({
   "location": "inserirContaSteps.a_senha(String)"
 });
 formatter.result({
-  "duration": 83411100,
+  "duration": 86931200,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_entrar()"
 });
 formatter.result({
-  "duration": 876816900,
+  "duration": 705701100,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
 });
 formatter.result({
-  "duration": 45633700,
+  "duration": 51132500,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Contas()"
 });
 formatter.result({
-  "duration": 99675900,
+  "duration": 86199900,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Adicionar()"
 });
 formatter.result({
-  "duration": 397285400,
+  "duration": 353391100,
   "status": "passed"
 });
 formatter.scenario({
@@ -425,14 +425,14 @@ formatter.match({
   "location": "inserirContaSteps.informo_a_conta(String)"
 });
 formatter.result({
-  "duration": 58449800,
+  "duration": 69561000,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Salvar()"
 });
 formatter.result({
-  "duration": 344569300,
+  "duration": 292596300,
   "status": "passed"
 });
 formatter.match({
@@ -445,23 +445,23 @@ formatter.match({
   "location": "inserirContaSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 39252200,
+  "duration": 40062800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 322879500,
+  "duration": 324138800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 759024600,
+  "duration": 855521500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 218400,
+  "duration": 438000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 153500,
+  "duration": 53400,
   "status": "passed"
 });
 formatter.background({
@@ -510,7 +510,7 @@ formatter.match({
   "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
 });
 formatter.result({
-  "duration": 7144103500,
+  "duration": 6512116400,
   "status": "passed"
 });
 formatter.match({
@@ -523,7 +523,7 @@ formatter.match({
   "location": "inserirContaSteps.informo_o_usuario(String)"
 });
 formatter.result({
-  "duration": 213041600,
+  "duration": 211274900,
   "status": "passed"
 });
 formatter.match({
@@ -536,35 +536,35 @@ formatter.match({
   "location": "inserirContaSteps.a_senha(String)"
 });
 formatter.result({
-  "duration": 104619300,
+  "duration": 118443000,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_entrar()"
 });
 formatter.result({
-  "duration": 967019700,
+  "duration": 647817200,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
 });
 formatter.result({
-  "duration": 46483800,
+  "duration": 35626400,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Contas()"
 });
 formatter.result({
-  "duration": 97715700,
+  "duration": 69617500,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Adicionar()"
 });
 formatter.result({
-  "duration": 380657300,
+  "duration": 349299300,
   "status": "passed"
 });
 formatter.scenario({
@@ -612,14 +612,14 @@ formatter.match({
   "location": "inserirContaSteps.informo_a_conta(String)"
 });
 formatter.result({
-  "duration": 121861100,
+  "duration": 114745400,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Salvar()"
 });
 formatter.result({
-  "duration": 300371400,
+  "duration": 319730600,
   "status": "passed"
 });
 formatter.match({
@@ -632,15 +632,15 @@ formatter.match({
   "location": "inserirContaSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 35874600,
+  "duration": 35649400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 328281900,
+  "duration": 293332200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 781706700,
+  "duration": 891154700,
   "status": "passed"
 });
 });

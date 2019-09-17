@@ -33,5 +33,5 @@ public class RunnerFuncionalTest {
 		driver.findElement(By.linkText("reset")).click();
 		driver.quit();
 	}
-	
+
 }
