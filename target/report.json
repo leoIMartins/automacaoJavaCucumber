@@ -9,1091 +9,107 @@
     "line": 3,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 293300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 93500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 8,
-        "name": "Deve alugar um filme com sucesso",
-        "description": "",
-        "id": "alugar-filme;deve-alugar-um-filme-com-sucesso",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 219956000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "um filme",
-            "match": {
-              "location": "AlugarFilmeSteps.um_filme(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "estoque",
-                  "2"
-                ],
-                "line": 10
-              },
-              {
-                "cells": [
-                  "preco",
-                  "3"
-                ],
-                "line": 11
-              },
-              {
-                "cells": [
-                  "tipo",
-                  "comum"
-                ],
-                "line": 12
-              }
-            ],
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 2187200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "alugar",
-            "match": {
-              "location": "AlugarFilmeSteps.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 3387800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "o preço do aluguel será R$ 3",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-            },
-            "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 832100,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "a data de entrega será em 1 dia",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 26
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 95600,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "o estoque do filme será 1 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.oEstoqueDoFilmeSeráUnidade(int)"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 276200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 50700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Não deve alugar filme sem estoque",
-        "description": "",
-        "id": "alugar-filme;não-deve-alugar-filme-sem-estoque",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 374500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "um filme com estoque de 0 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 130100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "alugar",
-            "match": {
-              "location": "AlugarFilmeSteps.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 34900,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "não será possível por falta de estoque",
-            "match": {
-              "location": "AlugarFilmeSteps.não_será_possível_por_falta_de_estoque()"
-            },
-            "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 390700,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "o estoque do filme será 0 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.oEstoqueDoFilmeSeráUnidade(int)"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 469600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 387600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 36,
-        "name": "Deve dar condições conforme tipo de aluguel",
-        "description": "",
-        "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;2",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 168300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 113900,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "que o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 31
-                }
-              ],
-              "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 142600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "que o tipo do aluguel seja extendido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "extendido",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 95100,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "alugar",
-            "match": {
-              "location": "AlugarFilmeSteps.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 117100,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o preço do aluguel será R$ 8",
-            "match": {
-              "arguments": [
-                {
-                  "val": "8",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 363800,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "a data de entrega será em 3 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 26
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 108300,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "a pontuação será de 2 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 20
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@unitários"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 207600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 56100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "Deve dar condições conforme tipo de aluguel",
-        "description": "",
-        "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;3",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 109200,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 93900,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "que o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 31
-                }
-              ],
-              "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 80000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "que o tipo do aluguel seja comum",
-            "match": {
-              "arguments": [
-                {
-                  "val": "comum",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 92700,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "alugar",
-            "match": {
-              "location": "AlugarFilmeSteps.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 124400,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o preço do aluguel será R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 342600,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "a data de entrega será em 1 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 26
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 95200,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "a pontuação será de 1 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 20
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@unitários"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 269800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 219000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 38,
-        "name": "Deve dar condições conforme tipo de aluguel",
-        "description": "",
-        "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;4",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 105300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 110600,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "que o preço do aluguel seja R$ 10",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 31
-                }
-              ],
-              "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 68900,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "que o tipo do aluguel seja extendido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "extendido",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 108300,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "alugar",
-            "match": {
-              "location": "AlugarFilmeSteps.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 165900,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o preço do aluguel será R$ 20",
-            "match": {
-              "arguments": [
-                {
-                  "val": "20",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 556700,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "a data de entrega será em 3 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 26
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 91100,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "a pontuação será de 2 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 20
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@unitários"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 278100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 140100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 39,
-        "name": "Deve dar condições conforme tipo de aluguel",
-        "description": "",
-        "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;5",
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 843100,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 188400,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "que o preço do aluguel seja R$ 5",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 31
-                }
-              ],
-              "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 117600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "que o tipo do aluguel seja semanal",
-            "match": {
-              "arguments": [
-                {
-                  "val": "semanal",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 105500,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "alugar",
-            "match": {
-              "location": "AlugarFilmeSteps.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 85900,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o preço do aluguel será R$ 15",
-            "match": {
-              "arguments": [
-                {
-                  "val": "15",
-                  "offset": 27
-                }
-              ],
-              "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 860400,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "a data de entrega será em 7 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "7",
-                  "offset": 26
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 129700,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "a pontuação será de 3 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 20
-                }
-              ],
-              "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@unitários"
-          }
-        ]
-      }
-    ],
-    "name": "Alugar Filme",
-    "description": "Como um usuário\r\nEu quero cadastrar aluguéis de filmes\r\nPara controlar preços e datas de entrega",
-    "id": "alugar-filme",
-    "keyword": "Funcionalidade",
-    "uri": "alugar_filme.feature",
-    "tags": [
-      {
-        "line": 2,
-        "name": "@unitários"
-      }
-    ]
-  },
-  {
-    "comments": [
-      {
-        "line": 1,
-        "value": "# language: pt"
-      }
-    ],
-    "line": 4,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 281700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-              "duration": 305900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
         "line": 9,
-        "name": "Deve executar especificacao",
+        "name": "",
         "description": "",
-        "id": "aprender-cucumber;deve-executar-especificacao",
-        "type": "scenario",
-        "keyword": "Cenario",
+        "type": "background",
+        "keyword": "Contexto",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 759500,
-=======
-              "duration": 6613717600,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 7862027100,
               "status": "passed"
             },
             "line": 10,
-            "name": "que criei o arquivo corretamente",
+            "name": "que estou acessando a aplicação",
             "match": {
-              "location": "AprenderCucumberSteps.queCrieiOArquivoCorretamente()"
+              "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 32200,
-=======
-              "duration": 366657200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 225109600,
               "status": "passed"
             },
             "line": 11,
-            "name": "executa-lo",
+            "name": "informo o usuario \"leonardo_ignacio2010@hotmail.com\"",
             "match": {
-              "location": "AprenderCucumberSteps.executaLo()"
+              "arguments": [
+                {
+                  "val": "leonardo_ignacio2010@hotmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "inserirContaSteps.informo_o_usuario(String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 25100,
+              "duration": 77577000,
               "status": "passed"
             },
             "line": 12,
-            "name": "a especificacao deve finalizar com sucesso",
+            "name": "a senha \"lsb123\"",
             "match": {
-              "location": "AprenderCucumberSteps.aEspecificacaoDeveFinalizarComSucesso()"
+              "arguments": [
+                {
+                  "val": "lsb123",
+                  "offset": 9
+                }
+              ],
+              "location": "inserirContaSteps.a_senha(String)"
             },
-            "keyword": "Entao "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 251400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
+            "keyword": "E "
           },
           {
             "result": {
-              "duration": 63500,
+              "duration": 801919700,
               "status": "passed"
             },
+            "line": 13,
+            "name": "seleciono entrar",
             "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Deve incrementar contador",
-        "description": "",
-        "id": "aprender-cucumber;deve-incrementar-contador",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
+              "location": "inserirContaSteps.seleciono_entrar()"
+            },
+            "keyword": "E "
+          },
           {
             "result": {
-              "duration": 267400,
+              "duration": 45241300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo a pagina inicial",
+            "match": {
+              "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 82661100,
               "status": "passed"
             },
             "line": 15,
-            "name": "que o valor do contador é 15",
+            "name": "seleciono Contas",
             "match": {
-              "arguments": [
-                {
-                  "val": "15",
-                  "offset": 26
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
+              "location": "inserirContaSteps.seleciono_Contas()"
             },
-            "keyword": "Dado "
+            "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 87700,
+              "duration": 411297600,
               "status": "passed"
             },
             "line": 16,
-            "name": "eu incrementar em 3",
+            "name": "seleciono Adicionar",
             "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 18
-                }
-              ],
-              "location": "AprenderCucumberSteps.euIncrementarEm(int)"
+              "location": "inserirContaSteps.seleciono_Adicionar()"
             },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 257200,
-=======
-              "duration": 83702100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "o valor do contador sera 18",
-            "match": {
-              "arguments": [
-                {
-                  "val": "18",
-                  "offset": 25
-                }
-              ],
-              "location": "AprenderCucumberSteps.oValorDoContadorSera(int)"
-            },
-            "keyword": "Entao "
+            "keyword": "E "
           }
         ]
       },
@@ -1101,7 +117,7 @@
         "before": [
           {
             "result": {
-              "duration": 4154200,
+              "duration": 530400,
               "status": "passed"
             },
             "match": {
@@ -1110,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 7139900,
+              "duration": 725700,
               "status": "passed"
             },
             "match": {
@@ -1118,225 +134,14 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Deve incrementar contador",
+        "line": 25,
+        "name": "Deve validar regras cadastro contas",
         "description": "",
-        "id": "aprender-cucumber;deve-incrementar-contador",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 119400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "que o valor do contador é 123",
-            "match": {
-              "arguments": [
-                {
-                  "val": "123",
-                  "offset": 26
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 94500,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "eu incrementar em 35",
-            "match": {
-              "arguments": [
-                {
-                  "val": "35",
-                  "offset": 18
-                }
-              ],
-              "location": "AprenderCucumberSteps.euIncrementarEm(int)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 91000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "o valor do contador sera 158",
-            "match": {
-              "arguments": [
-                {
-                  "val": "158",
-                  "offset": 25
-                }
-              ],
-              "location": "AprenderCucumberSteps.oValorDoContadorSera(int)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "line": 19,
-            "name": "@tipo1"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 408300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 139100,
-=======
-              "duration": 632470300,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Deve calcular atraso na entrega",
-        "description": "",
-        "id": "aprender-cucumber;deve-calcular-atraso-na-entrega",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 2103800,
-=======
-              "duration": 56479300,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "que a entrega é dia 05/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05/04/2018",
-                  "offset": 20
-                }
-              ],
-              "location": "AprenderCucumberSteps.queAEntregaÉDia(Date)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 441700,
-=======
-              "duration": 66365000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "a entrega atrasar em 2 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                },
-                {
-                  "val": "dias",
-                  "offset": 23
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 754000,
-=======
-              "duration": 337631900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "a entrega será efetuada em 07/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "07/04/2018",
-                  "offset": 27
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "line": 25,
-            "name": "@tipo2"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 893000,
-=======
-              "duration": 373500,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 161300,
-=======
-              "duration": 462000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "Deve calcular atraso na entrega da China",
-        "description": "",
-<<<<<<< HEAD
-        "id": "aprender-cucumber;deve-calcular-atraso-na-entrega-da-china",
-=======
         "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2",
         "after": [
           {
             "result": {
-              "duration": 302815700,
+              "duration": 378600700,
               "status": "passed"
             },
             "match": {
@@ -1345,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 847980600,
+              "duration": 754274800,
               "status": "passed"
             },
             "match": {
@@ -1353,329 +158,23 @@
             }
           }
         ],
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 536400,
-=======
-              "duration": 137385100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 173038500,
               "status": "passed"
             },
-            "line": 33,
-            "name": "que a entrega é dia 05/04/2018",
+            "line": 19,
+            "name": "informo a conta \"Conta de Teste\"",
             "match": {
               "arguments": [
                 {
-                  "val": "05/04/2018",
-                  "offset": 20
+                  "val": "Conta de Teste",
+                  "offset": 17
                 }
               ],
-              "location": "AprenderCucumberSteps.queAEntregaÉDia(Date)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 336800,
-=======
-              "duration": 525694900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "a entrega atrasar em 2 meses",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                },
-                {
-                  "val": "meses",
-                  "offset": 23
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 402100,
-=======
-              "duration": 34575100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "a entrega será efetuada em 05/06/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05/06/2018",
-                  "offset": 27
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "line": 31,
-            "name": "@tipo1"
-          },
-          {
-            "line": 31,
-            "name": "@tipo2"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 226300,
-=======
-              "duration": 6366886400,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 37000,
-=======
-              "duration": 190537200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "Deve criar steps genéricos para estes passos",
-        "description": "",
-        "id": "aprender-cucumber;deve-criar-steps-genéricos-para-estes-passos",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 93800,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "que o ticket é AF345",
-            "match": {
-              "arguments": [
-                {},
-                {
-                  "val": "AF345",
-                  "offset": 15
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 380200,
-=======
-              "duration": 86931200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "que o valor da passagem é R$ 230,45",
-            "match": {
-              "arguments": [
-                {
-                  "val": "230,45",
-                  "offset": 29
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 57400,
-=======
-              "duration": 705701100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "que o nome do passageiro é \"Fulano da Silva\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Fulano da Silva",
-                  "offset": 28
-                }
-              ],
-              "location": "AprenderCucumberSteps.queONomeDoPassageiroÉ(String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 78000,
-=======
-              "duration": 51132500,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "que o telefone do passageiro é 9999-9999",
-            "match": {
-              "arguments": [
-                {
-                  "val": "9999-9999",
-                  "offset": 31
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOTelefoneDoPassageiroÉ(String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 20100,
-=======
-              "duration": 86199900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "criar os steps",
-            "match": {
-              "location": "AprenderCucumberSteps.criarOsSteps()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 347900,
-=======
-              "duration": 353391100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "o teste vai funcionar",
-            "match": {
-              "location": "AprenderCucumberSteps.oTesteVaiFuncionar()"
-            },
-            "keyword": "Então "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 52400,
-=======
-              "duration": 54200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio2()"
-            }
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 25500,
-=======
-              "duration": 29100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.inicio()"
-            }
-          }
-        ],
-        "line": 45,
-        "name": "Deve reaproveitar os steps \"Dado\" do cenário anterior",
-        "description": "",
-<<<<<<< HEAD
-        "id": "aprender-cucumber;deve-reaproveitar-os-steps-\"dado\"-do-cenário-anterior",
-=======
-        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 324138800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.screenshot(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 855521500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "inserirContaSteps.fecharBrowser()"
-            }
-          }
-        ],
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 87000,
-=======
-              "duration": 69561000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "que o ticket é AB167",
-            "match": {
-              "arguments": [
-                {},
-                {
-                  "val": "AB167",
-                  "offset": 15
-                }
-              ],
-<<<<<<< HEAD
-              "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
-=======
               "location": "inserirContaSteps.informo_a_conta(String)"
             },
             "matchedColumns": [
@@ -1685,37 +184,30 @@
           },
           {
             "result": {
-              "duration": 292596300,
+              "duration": 763736100,
               "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
             },
-            "keyword": "Dado "
+            "line": 20,
+            "name": "seleciono Salvar",
+            "match": {
+              "location": "inserirContaSteps.seleciono_Salvar()"
+            },
+            "keyword": "E "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 33145600,
-=======
-              "duration": 40062800,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 40619900,
               "status": "passed"
             },
-            "line": 47,
-            "name": "que o ticket especial é AB167",
+            "line": 21,
+            "name": "recebo a mensagem \"Conta adicionada com sucesso!\"",
             "match": {
               "arguments": [
                 {
-                  "val": " especial",
-                  "offset": 12
-                },
-                {
-                  "val": "AB167",
-                  "offset": 24
+                  "val": "Conta adicionada com sucesso!",
+                  "offset": 19
                 }
               ],
-<<<<<<< HEAD
-              "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
-=======
               "location": "inserirContaSteps.receboAMensagem(String)"
             },
             "matchedColumns": [
@@ -1740,67 +232,55 @@
         "steps": [
           {
             "result": {
-              "duration": 6512116400,
+              "duration": 7779401100,
               "status": "passed"
             },
             "line": 10,
             "name": "que estou acessando a aplicação",
             "match": {
               "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
             },
             "keyword": "Dado "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 375400,
-=======
-              "duration": 211274900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 166304900,
               "status": "passed"
             },
-            "line": 48,
-            "name": "que o valor da passagem é R$ 1120,23",
+            "line": 11,
+            "name": "informo o usuario \"leonardo_ignacio2010@hotmail.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "1120,23",
-                  "offset": 29
+                  "val": "leonardo_ignacio2010@hotmail.com",
+                  "offset": 19
                 }
               ],
-              "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
+              "location": "inserirContaSteps.informo_o_usuario(String)"
             },
-            "keyword": "Dado "
+            "keyword": "Quando "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 59900,
-=======
-              "duration": 118443000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 73344100,
               "status": "passed"
             },
-            "line": 49,
-            "name": "que o nome do passageiro é \"Cicrano de Oliveira\"",
+            "line": 12,
+            "name": "a senha \"lsb123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Cicrano de Oliveira",
-                  "offset": 28
+                  "val": "lsb123",
+                  "offset": 9
                 }
               ],
-<<<<<<< HEAD
-              "location": "AprenderCucumberSteps.queONomeDoPassageiroÉ(String)"
-=======
               "location": "inserirContaSteps.a_senha(String)"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 647817200,
+              "duration": 795480400,
               "status": "passed"
             },
             "line": 13,
@@ -1812,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 35626400,
+              "duration": 32241000,
               "status": "passed"
             },
             "line": 14,
@@ -1824,38 +304,27 @@
           },
           {
             "result": {
-              "duration": 69617500,
+              "duration": 97183200,
               "status": "passed"
             },
             "line": 15,
             "name": "seleciono Contas",
             "match": {
               "location": "inserirContaSteps.seleciono_Contas()"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
             },
-            "keyword": "Dado "
+            "keyword": "Quando "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 55200,
-=======
-              "duration": 349299300,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 420672100,
               "status": "passed"
             },
-            "line": 50,
-            "name": "que o telefone do passageiro é 9888-8888",
+            "line": 16,
+            "name": "seleciono Adicionar",
             "match": {
-              "arguments": [
-                {
-                  "val": "9888-8888",
-                  "offset": 31
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOTelefoneDoPassageiroÉ(String)"
+              "location": "inserirContaSteps.seleciono_Adicionar()"
             },
-            "keyword": "Dado "
+            "keyword": "E "
           }
         ]
       },
@@ -1863,11 +332,7 @@
         "before": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 397800,
-=======
-              "duration": 438000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 257300,
               "status": "passed"
             },
             "match": {
@@ -1876,11 +341,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 42100,
-=======
-              "duration": 53400,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+              "duration": 182900,
               "status": "passed"
             },
             "match": {
@@ -1888,122 +349,320 @@
             }
           }
         ],
-        "line": 52,
-        "name": "Deve negar todos os steps \"Dado\" dos cenários anteriores",
+        "line": 26,
+        "name": "Deve validar regras cadastro contas",
         "description": "",
-        "id": "aprender-cucumber;deve-negar-todos-os-steps-\"dado\"-dos-cenários-anteriores",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 346851400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "inserirContaSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 719649900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "inserirContaSteps.fecharBrowser()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Esquema do Cenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-=======
-              "duration": 293332200,
+              "duration": 52028600,
               "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
             },
-            "line": 53,
-            "name": "que o ticket é CD123",
-            "match": {},
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-=======
-              "duration": 891154700,
-              "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-            },
-            "line": 54,
-            "name": "que o ticket é AG1234",
-            "match": {},
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "skipped"
-=======
-              "duration": 114745400,
-              "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-            },
-            "line": 55,
-            "name": "que o valor da passagem é R$ 1.1345,56",
+            "line": 19,
+            "name": "informo a conta \"\"",
             "match": {
               "arguments": [
                 {
-                  "val": "1.1345,56",
-                  "offset": 29
+                  "val": "",
+                  "offset": 17
                 }
               ],
-              "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
+              "location": "inserirContaSteps.informo_a_conta(String)"
             },
-            "keyword": "Dado "
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-=======
-              "duration": 319730600,
+              "duration": 354458500,
               "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
             },
-            "line": 56,
-            "name": "que o nome do passageiro é \"Beltrano Souza Matos de Alcântara Azevedo\"",
-            "match": {},
-            "keyword": "Dado "
+            "line": 20,
+            "name": "seleciono Salvar",
+            "match": {
+              "location": "inserirContaSteps.seleciono_Salvar()"
+            },
+            "keyword": "E "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-=======
-              "duration": 35649400,
+              "duration": 32870600,
               "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
             },
-            "line": 57,
-            "name": "que o telefone do passageiro é 1234-5678",
-            "match": {},
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "line": 21,
+            "name": "recebo a mensagem \"Informe o nome da conta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Informe o nome da conta",
+                  "offset": 19
+                }
+              ],
+              "location": "inserirContaSteps.receboAMensagem(String)"
             },
-            "line": 58,
-            "name": "que o telefone do passageiro é 999-2223",
-            "match": {},
-            "keyword": "Dado "
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "line": 51,
-            "name": "@ignore"
+            "line": 2,
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7709043900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 172194000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "informo o usuario \"leonardo_ignacio2010@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "leonardo_ignacio2010@hotmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "inserirContaSteps.informo_o_usuario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 72351300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "a senha \"lsb123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lsb123",
+                  "offset": 9
+                }
+              ],
+              "location": "inserirContaSteps.a_senha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 789723300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "seleciono entrar",
+            "match": {
+              "location": "inserirContaSteps.seleciono_entrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 37423400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo a pagina inicial",
+            "match": {
+              "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 79893800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "seleciono Contas",
+            "match": {
+              "location": "inserirContaSteps.seleciono_Contas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 411139800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "seleciono Adicionar",
+            "match": {
+              "location": "inserirContaSteps.seleciono_Adicionar()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 216300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "inserirContaSteps.inicio2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 134900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "inserirContaSteps.inicio()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 354355500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "inserirContaSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 746832900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "inserirContaSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114118500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "informo a conta \"Conta mesmo nome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conta mesmo nome",
+                  "offset": 17
+                }
+              ],
+              "location": "inserirContaSteps.informo_a_conta(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 346931100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "seleciono Salvar",
+            "match": {
+              "location": "inserirContaSteps.seleciono_Salvar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 33939700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "recebo a mensagem \"Já existe uma conta com esse nome!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Já existe uma conta com esse nome!",
+                  "offset": 19
+                }
+              ],
+              "location": "inserirContaSteps.receboAMensagem(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@funcionais"
           }
         ]
       }
     ],
-    "name": "Aprender Cucumber",
-    "description": "Como um aluno\r\nEu quero aprender a utilizar Cucumber\r\nPara que eu possa automatizar criterios de aceitacao",
-    "id": "aprender-cucumber",
+    "name": "Cadastro de contas",
+    "description": "\r\nComo um usuario \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "id": "cadastro-de-contas",
     "keyword": "Funcionalidade",
-    "uri": "aprender_cucumber.feature",
+    "uri": "inserir_conta.feature",
     "tags": [
       {
         "line": 2,
-        "name": "@unitários"
-      },
-      {
-        "line": 3,
-        "name": "@esse"
+        "name": "@funcionais"
       }
     ]
   }

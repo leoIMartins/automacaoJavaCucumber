@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("alugar_filme.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("inserir_conta.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,1289 +7,127 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Alugar Filme",
-  "description": "Como um usuário\r\nEu quero cadastrar aluguéis de filmes\r\nPara controlar preços e datas de entrega",
-  "id": "alugar-filme",
+  "name": "Cadastro de contas",
+  "description": "\r\nComo um usuario \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+  "id": "cadastro-de-contas",
   "keyword": "Funcionalidade",
   "tags": [
     {
       "line": 2,
-      "name": "@unitários"
+      "name": "@funcionais"
     }
   ]
 });
-formatter.before({
-  "duration": 293300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 93500,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 8,
-  "name": "Deve alugar um filme com sucesso",
+formatter.scenarioOutline({
+  "line": 18,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "alugar-filme;deve-alugar-um-filme-com-sucesso",
-  "type": "scenario",
-  "keyword": "Cenário"
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas",
+  "type": "scenario_outline",
+  "keyword": "Esquema do Cenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "um filme",
-  "rows": [
-    {
-      "cells": [
-        "estoque",
-        "2"
-      ],
-      "line": 10
-    },
-    {
-      "cells": [
-        "preco",
-        "3"
-      ],
-      "line": 11
-    },
-    {
-      "cells": [
-        "tipo",
-        "comum"
-      ],
-      "line": 12
-    }
-  ],
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 14,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 15,
-  "name": "o preço do aluguel será R$ 3",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 16,
-  "name": "a data de entrega será em 1 dia",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 17,
-  "name": "o estoque do filme será 1 unidade",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.um_filme(DataTable)"
-});
-formatter.result({
-  "duration": 219956000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 2187200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 3387800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-});
-formatter.result({
-  "duration": 832100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.oEstoqueDoFilmeSeráUnidade(int)"
-});
-formatter.result({
-  "duration": 95600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 276200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 50700,
-  "status": "passed"
-});
-formatter.scenario({
   "line": 19,
-  "name": "Não deve alugar filme sem estoque",
-  "description": "",
-  "id": "alugar-filme;não-deve-alugar-filme-sem-estoque",
-  "type": "scenario",
-  "keyword": "Cenário"
+  "name": "informo a conta \"\u003cconta\u003e\"",
+  "keyword": "Quando "
 });
 formatter.step({
   "line": 20,
-  "name": "um filme com estoque de 0 unidades",
-  "keyword": "Dado "
+  "name": "seleciono Salvar",
+  "keyword": "E "
 });
 formatter.step({
   "line": 21,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 22,
-  "name": "não será possível por falta de estoque",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 23,
-  "name": "o estoque do filme será 0 unidade",
-  "keyword": "E "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-});
-formatter.result({
-  "duration": 374500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 130100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.não_será_possível_por_falta_de_estoque()"
-});
-formatter.result({
-  "duration": 34900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.oEstoqueDoFilmeSeráUnidade(int)"
-});
-formatter.result({
-  "duration": 390700,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 25,
-  "name": "Deve dar condições conforme tipo de aluguel",
-  "description": "",
-  "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel",
-  "type": "scenario_outline",
-  "keyword": "Esquema do Cenário"
-});
-formatter.step({
-  "line": 26,
-  "name": "um filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 27,
-  "name": "que o preço do aluguel seja R$ \u003cpreco\u003e",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "que o tipo do aluguel seja \u003ctipo\u003e",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 30,
-  "name": "o preço do aluguel será R$ \u003cvalor\u003e",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 31,
-  "name": "a data de entrega será em \u003cqtdDias\u003e dias",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 32,
-  "name": "a pontuação será de \u003cpontuacao\u003e pontos",
-  "keyword": "E "
+  "name": "recebo a mensagem \"\u003cmensagem\u003e\"",
+  "keyword": "Entao "
 });
 formatter.examples({
-  "comments": [
-    {
-      "line": 33,
-      "value": "#Testes Data-Driven (orientado por dados)"
-    }
-  ],
-  "line": 34,
+  "line": 23,
   "name": "",
   "description": "",
-  "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;",
   "rows": [
     {
       "cells": [
-        "preco",
-        "tipo",
-        "valor",
-        "qtdDias",
-        "pontuacao"
+        "conta",
+        "mensagem"
       ],
-      "line": 35,
-      "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;1"
+      "line": 24,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;1"
     },
     {
       "cells": [
-        "4",
-        "extendido",
-        "8",
-        "3",
-        "2"
+        "Conta de Teste",
+        "Conta adicionada com sucesso!"
       ],
-      "line": 36,
-      "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;2"
+      "line": 25,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2"
     },
     {
       "cells": [
-        "4",
-        "comum",
-        "4",
-        "1",
-        "1"
+        "",
+        "Informe o nome da conta"
       ],
-      "line": 37,
-      "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;3"
+      "line": 26,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3"
     },
     {
       "cells": [
-        "10",
-        "extendido",
-        "20",
-        "3",
-        "2"
+        "Conta mesmo nome",
+        "Já existe uma conta com esse nome!"
       ],
-      "line": 38,
-      "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;4"
-    },
-    {
-      "cells": [
-        "5",
-        "semanal",
-        "15",
-        "7",
-        "3"
-      ],
-      "line": 39,
-      "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;5"
+      "line": 27,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.before({
-<<<<<<< HEAD
-  "duration": 469600,
+  "duration": 530400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 387600,
-=======
-  "duration": 373500,
+  "duration": 725700,
   "status": "passed"
 });
-formatter.before({
-  "duration": 462000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 36,
-  "name": "Deve dar condições conforme tipo de aluguel",
-  "description": "",
-  "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;2",
-  "type": "scenario",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "line": 2,
-      "name": "@unitários"
-    }
-  ]
-});
-formatter.step({
-  "line": 26,
-  "name": "um filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 27,
-  "name": "que o preço do aluguel seja R$ 4",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "que o tipo do aluguel seja extendido",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 30,
-  "name": "o preço do aluguel será R$ 8",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 31,
-  "name": "a data de entrega será em 3 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 32,
-  "name": "a pontuação será de 2 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-});
-formatter.result({
-  "duration": 168300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4",
-      "offset": 31
-    }
-  ],
-  "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-});
-formatter.result({
-  "duration": 113900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "extendido",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-});
-formatter.result({
-  "duration": 142600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 95100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "8",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 117100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 26
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-});
-formatter.result({
-  "duration": 363800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 20
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-});
-formatter.result({
-  "duration": 108300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 207600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 56100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 37,
-  "name": "Deve dar condições conforme tipo de aluguel",
-  "description": "",
-  "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;3",
-  "type": "scenario",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "line": 2,
-      "name": "@unitários"
-    }
-  ]
-});
-formatter.step({
-  "line": 26,
-  "name": "um filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 27,
-  "name": "que o preço do aluguel seja R$ 4",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "que o tipo do aluguel seja comum",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 30,
-  "name": "o preço do aluguel será R$ 4",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 31,
-  "name": "a data de entrega será em 1 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 32,
-  "name": "a pontuação será de 1 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-});
-formatter.result({
-  "duration": 109200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4",
-      "offset": 31
-    }
-  ],
-  "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-});
-formatter.result({
-  "duration": 93900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "comum",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-});
-formatter.result({
-  "duration": 80000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 92700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 124400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-});
-formatter.result({
-  "duration": 342600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 20
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-});
-formatter.result({
-  "duration": 95200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 269800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 219000,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 38,
-  "name": "Deve dar condições conforme tipo de aluguel",
-  "description": "",
-  "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;4",
-  "type": "scenario",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "line": 2,
-      "name": "@unitários"
-    }
-  ]
-});
-formatter.step({
-  "line": 26,
-  "name": "um filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 27,
-  "name": "que o preço do aluguel seja R$ 10",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "que o tipo do aluguel seja extendido",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 30,
-  "name": "o preço do aluguel será R$ 20",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 31,
-  "name": "a data de entrega será em 3 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 32,
-  "name": "a pontuação será de 2 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-});
-formatter.result({
-  "duration": 105300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 31
-    }
-  ],
-  "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-});
-formatter.result({
-  "duration": 110600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "extendido",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-});
-formatter.result({
-  "duration": 68900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 108300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "20",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 165900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 26
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-});
-formatter.result({
-  "duration": 556700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 20
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-});
-formatter.result({
-  "duration": 91100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 278100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 140100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 39,
-  "name": "Deve dar condições conforme tipo de aluguel",
-  "description": "",
-  "id": "alugar-filme;deve-dar-condições-conforme-tipo-de-aluguel;;5",
-  "type": "scenario",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "line": 2,
-      "name": "@unitários"
-    }
-  ]
-});
-formatter.step({
-  "line": 26,
-  "name": "um filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 27,
-  "name": "que o preço do aluguel seja R$ 5",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "que o tipo do aluguel seja semanal",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "alugar",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 30,
-  "name": "o preço do aluguel será R$ 15",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 31,
-  "name": "a data de entrega será em 7 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 32,
-  "name": "a pontuação será de 3 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-});
-formatter.result({
-  "duration": 843100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5",
-      "offset": 31
-    }
-  ],
-  "location": "AlugarFilmeSteps.queOPreçoDoAluguelSejaR$(int)"
-});
-formatter.result({
-  "duration": 188400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "semanal",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.que_o_tipo_do_aluguel_seja_extendido(String)"
-});
-formatter.result({
-  "duration": 117600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 105500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "15",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.oPreçoDoAluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 85900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "7",
-      "offset": 26
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_data_de_entrega_será_em_dias(int)"
-});
-formatter.result({
-  "duration": 860400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 20
-    }
-  ],
-  "location": "AlugarFilmeSteps.a_pontuação_será_de_pontos(int)"
-});
-formatter.result({
-  "duration": 129700,
-  "status": "passed"
-});
-formatter.uri("aprender_cucumber.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "# language: pt"
-    }
-  ],
-  "line": 4,
-  "name": "Aprender Cucumber",
-  "description": "Como um aluno\r\nEu quero aprender a utilizar Cucumber\r\nPara que eu possa automatizar criterios de aceitacao",
-  "id": "aprender-cucumber",
-  "keyword": "Funcionalidade",
-  "tags": [
-    {
-      "line": 2,
-      "name": "@unitários"
-    },
-    {
-      "line": 3,
-      "name": "@esse"
-    }
-  ]
-});
-formatter.before({
-  "duration": 281700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 305900,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.background({
   "line": 9,
-  "name": "Deve executar especificacao",
+  "name": "",
   "description": "",
-  "id": "aprender-cucumber;deve-executar-especificacao",
-  "type": "scenario",
-  "keyword": "Cenario"
+  "type": "background",
+  "keyword": "Contexto"
 });
 formatter.step({
   "line": 10,
-  "name": "que criei o arquivo corretamente",
+  "name": "que estou acessando a aplicação",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 11,
-  "name": "executa-lo",
+  "name": "informo o usuario \"leonardo_ignacio2010@hotmail.com\"",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 12,
-  "name": "a especificacao deve finalizar com sucesso",
-  "keyword": "Entao "
+  "name": "a senha \"lsb123\"",
+  "keyword": "E "
 });
-formatter.match({
-  "location": "AprenderCucumberSteps.queCrieiOArquivoCorretamente()"
+formatter.step({
+  "line": 13,
+  "name": "seleciono entrar",
+  "keyword": "E "
 });
-formatter.result({
-  "duration": 759500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AprenderCucumberSteps.executaLo()"
-});
-formatter.result({
-  "duration": 32200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AprenderCucumberSteps.aEspecificacaoDeveFinalizarComSucesso()"
-});
-formatter.result({
-  "duration": 25100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 251400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 63500,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.step({
   "line": 14,
-  "name": "Deve incrementar contador",
-  "description": "",
-  "id": "aprender-cucumber;deve-incrementar-contador",
-  "type": "scenario",
-  "keyword": "Cenario"
+  "name": "visualizo a pagina inicial",
+  "keyword": "Entao "
 });
 formatter.step({
   "line": 15,
-  "name": "que o valor do contador é 15",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 16,
-  "name": "eu incrementar em 3",
-  "keyword": "Quando "
-});
-<<<<<<< HEAD
-formatter.step({
-  "line": 17,
-  "name": "o valor do contador sera 18",
-  "keyword": "Entao "
-=======
-formatter.result({
-  "duration": 6613717600,
-  "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "15",
-      "offset": 26
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 267400,
-=======
-  "duration": 366657200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 18
-    }
-  ],
-<<<<<<< HEAD
-  "location": "AprenderCucumberSteps.euIncrementarEm(int)"
-});
-formatter.result({
-  "duration": 87700,
-=======
-  "location": "inserirContaSteps.a_senha(String)"
-});
-formatter.result({
-  "duration": 83702100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "inserirContaSteps.seleciono_entrar()"
-});
-formatter.result({
-  "duration": 632470300,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "18",
-      "offset": 25
-    }
-  ],
-  "location": "AprenderCucumberSteps.oValorDoContadorSera(int)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 257200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 4154200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7139900,
-=======
-  "duration": 56479300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "inserirContaSteps.seleciono_Contas()"
-});
-formatter.result({
-  "duration": 66365000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "inserirContaSteps.seleciono_Adicionar()"
-});
-formatter.result({
-  "duration": 337631900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Deve incrementar contador",
-  "description": "",
-  "id": "aprender-cucumber;deve-incrementar-contador",
-  "type": "scenario",
-  "keyword": "Cenario",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@tipo1"
-    }
-  ]
-});
-formatter.step({
-  "line": 21,
-  "name": "que o valor do contador é 123",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 22,
-  "name": "eu incrementar em 35",
+  "name": "seleciono Contas",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 23,
-  "name": "o valor do contador sera 158",
-  "keyword": "Entao "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "123",
-      "offset": 26
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 119400,
-=======
-  "duration": 137385100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "35",
-      "offset": 18
-    }
-  ],
-  "location": "AprenderCucumberSteps.euIncrementarEm(int)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 94500,
-=======
-  "duration": 525694900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "158",
-      "offset": 25
-    }
-  ],
-  "location": "AprenderCucumberSteps.oValorDoContadorSera(int)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 91000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 408300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 139100,
-=======
-  "duration": 34575100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 302815700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 847980600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 54200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 29100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "Deve calcular atraso na entrega",
-  "description": "",
-  "id": "aprender-cucumber;deve-calcular-atraso-na-entrega",
-  "type": "scenario",
-  "keyword": "Cenario",
-  "tags": [
-    {
-      "line": 25,
-      "name": "@tipo2"
-    }
-  ]
-});
-formatter.step({
-  "line": 27,
-  "name": "que a entrega é dia 05/04/2018",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 28,
-  "name": "a entrega atrasar em 2 dias",
-  "keyword": "Quando "
-});
-formatter.step({
-<<<<<<< HEAD
-  "line": 29,
-  "name": "a entrega será efetuada em 07/04/2018",
-  "keyword": "Então "
-=======
   "line": 16,
   "name": "seleciono Adicionar",
   "keyword": "E "
@@ -1298,556 +136,511 @@ formatter.match({
   "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
 });
 formatter.result({
-  "duration": 6366886400,
-  "status": "passed"
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "05/04/2018",
-      "offset": 20
-    }
-  ],
-  "location": "AprenderCucumberSteps.queAEntregaÉDia(Date)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 2103800,
-=======
-  "duration": 190537200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 7862027100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2",
-      "offset": 21
-    },
-    {
-      "val": "dias",
-      "offset": 23
+      "val": "leonardo_ignacio2010@hotmail.com",
+      "offset": 19
     }
   ],
-<<<<<<< HEAD
-  "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
+  "location": "inserirContaSteps.informo_o_usuario(String)"
 });
 formatter.result({
-  "duration": 441700,
-=======
+  "duration": 225109600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lsb123",
+      "offset": 9
+    }
+  ],
   "location": "inserirContaSteps.a_senha(String)"
 });
 formatter.result({
-  "duration": 86931200,
+  "duration": 77577000,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_entrar()"
 });
 formatter.result({
-  "duration": 705701100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 801919700,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "07/04/2018",
-      "offset": 27
-    }
-  ],
-  "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
+  "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
 });
 formatter.result({
-<<<<<<< HEAD
-  "duration": 754000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 893000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 161300,
-=======
-  "duration": 51132500,
+  "duration": 45241300,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Contas()"
 });
 formatter.result({
-  "duration": 86199900,
+  "duration": 82661100,
   "status": "passed"
 });
 formatter.match({
   "location": "inserirContaSteps.seleciono_Adicionar()"
 });
 formatter.result({
-  "duration": 353391100,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 411297600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 32,
-  "name": "Deve calcular atraso na entrega da China",
+  "line": 25,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "aprender-cucumber;deve-calcular-atraso-na-entrega-da-china",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2",
   "type": "scenario",
-  "keyword": "Cenario",
+  "keyword": "Esquema do Cenario",
   "tags": [
     {
-      "line": 31,
-      "name": "@tipo1"
-    },
-    {
-      "line": 31,
-      "name": "@tipo2"
+      "line": 2,
+      "name": "@funcionais"
     }
   ]
 });
 formatter.step({
-  "line": 33,
-  "name": "que a entrega é dia 05/04/2018",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 34,
-  "name": "a entrega atrasar em 2 meses",
+  "line": 19,
+  "name": "informo a conta \"Conta de Teste\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 35,
-  "name": "a entrega será efetuada em 05/06/2018",
-  "keyword": "Então "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "05/04/2018",
-      "offset": 20
-    }
-  ],
-  "location": "AprenderCucumberSteps.queAEntregaÉDia(Date)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 536400,
-=======
-  "duration": 69561000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 21
-    },
-    {
-      "val": "meses",
-      "offset": 23
-    }
-  ],
-  "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 336800,
-=======
-  "duration": 292596300,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "05/06/2018",
-      "offset": 27
-    }
-  ],
-  "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 402100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 226300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 37000,
-=======
-  "duration": 40062800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 324138800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 855521500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 438000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 53400,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 37,
-  "name": "Deve criar steps genéricos para estes passos",
-  "description": "",
-  "id": "aprender-cucumber;deve-criar-steps-genéricos-para-estes-passos",
-  "type": "scenario",
-  "keyword": "Cenário"
+  "line": 20,
+  "name": "seleciono Salvar",
+  "keyword": "E "
 });
 formatter.step({
-  "line": 38,
-  "name": "que o ticket é AF345",
+  "line": 21,
+  "name": "recebo a mensagem \"Conta adicionada com sucesso!\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Entao "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta de Teste",
+      "offset": 17
+    }
+  ],
+  "location": "inserirContaSteps.informo_a_conta(String)"
+});
+formatter.result({
+  "duration": 173038500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Salvar()"
+});
+formatter.result({
+  "duration": 763736100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta adicionada com sucesso!",
+      "offset": 19
+    }
+  ],
+  "location": "inserirContaSteps.receboAMensagem(String)"
+});
+formatter.result({
+  "duration": 40619900,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 378600700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 754274800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 257300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 182900,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou acessando a aplicação",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 39,
-  "name": "que o valor da passagem é R$ 230,45",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 40,
-  "name": "que o nome do passageiro é \"Fulano da Silva\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 41,
-  "name": "que o telefone do passageiro é 9999-9999",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 42,
-  "name": "criar os steps",
+  "line": 11,
+  "name": "informo o usuario \"leonardo_ignacio2010@hotmail.com\"",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 43,
-  "name": "o teste vai funcionar",
-  "keyword": "Então "
+  "line": 12,
+  "name": "a senha \"lsb123\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 13,
+  "name": "seleciono entrar",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 14,
+  "name": "visualizo a pagina inicial",
+  "keyword": "Entao "
+});
+formatter.step({
+  "line": 15,
+  "name": "seleciono Contas",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 16,
+  "name": "seleciono Adicionar",
+  "keyword": "E "
 });
 formatter.match({
-  "arguments": [
-    {},
-    {
-      "val": "AF345",
-      "offset": 15
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
+  "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
 });
 formatter.result({
-<<<<<<< HEAD
-  "duration": 93800,
-=======
-  "duration": 6512116400,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "230,45",
-      "offset": 29
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 380200,
-=======
-  "duration": 211274900,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 7779401100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Fulano da Silva",
-      "offset": 28
+      "val": "leonardo_ignacio2010@hotmail.com",
+      "offset": 19
     }
   ],
-  "location": "AprenderCucumberSteps.queONomeDoPassageiroÉ(String)"
+  "location": "inserirContaSteps.informo_o_usuario(String)"
 });
 formatter.result({
-<<<<<<< HEAD
-  "duration": 57400,
-=======
-  "duration": 118443000,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 166304900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "9999-9999",
-      "offset": 31
+      "val": "lsb123",
+      "offset": 9
     }
   ],
-  "location": "AprenderCucumberSteps.queOTelefoneDoPassageiroÉ(String)"
+  "location": "inserirContaSteps.a_senha(String)"
 });
 formatter.result({
-<<<<<<< HEAD
-  "duration": 78000,
-=======
-  "duration": 647817200,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 73344100,
   "status": "passed"
 });
 formatter.match({
-  "location": "AprenderCucumberSteps.criarOsSteps()"
+  "location": "inserirContaSteps.seleciono_entrar()"
 });
 formatter.result({
-<<<<<<< HEAD
-  "duration": 20100,
-=======
-  "duration": 35626400,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 795480400,
   "status": "passed"
 });
 formatter.match({
-  "location": "AprenderCucumberSteps.oTesteVaiFuncionar()"
+  "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
 });
 formatter.result({
-<<<<<<< HEAD
-  "duration": 347900,
-=======
-  "duration": 69617500,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 32241000,
   "status": "passed"
 });
-formatter.before({
-  "duration": 52400,
-  "status": "passed"
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Contas()"
 });
-<<<<<<< HEAD
-formatter.before({
-  "duration": 25500,
-=======
 formatter.result({
-  "duration": 349299300,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
+  "duration": 97183200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Adicionar()"
+});
+formatter.result({
+  "duration": 420672100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 45,
-  "name": "Deve reaproveitar os steps \"Dado\" do cenário anterior",
+  "line": 26,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "aprender-cucumber;deve-reaproveitar-os-steps-\"dado\"-do-cenário-anterior",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
   "type": "scenario",
-  "keyword": "Cenário"
-});
-formatter.step({
-  "line": 46,
-  "name": "que o ticket é AB167",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 47,
-  "name": "que o ticket especial é AB167",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 48,
-  "name": "que o valor da passagem é R$ 1120,23",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 49,
-  "name": "que o nome do passageiro é \"Cicrano de Oliveira\"",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 50,
-  "name": "que o telefone do passageiro é 9888-8888",
-  "keyword": "Dado "
-});
-formatter.match({
-  "arguments": [
-    {},
-    {
-      "val": "AB167",
-      "offset": 15
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
-});
-formatter.result({
-  "duration": 87000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": " especial",
-      "offset": 12
-    },
-    {
-      "val": "AB167",
-      "offset": 24
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
-});
-formatter.result({
-  "duration": 33145600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1120,23",
-      "offset": 29
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 375400,
-=======
-  "duration": 114745400,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Cicrano de Oliveira",
-      "offset": 28
-    }
-  ],
-  "location": "AprenderCucumberSteps.queONomeDoPassageiroÉ(String)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 59900,
-=======
-  "duration": 319730600,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "9888-8888",
-      "offset": 31
-    }
-  ],
-  "location": "AprenderCucumberSteps.queOTelefoneDoPassageiroÉ(String)"
-});
-formatter.result({
-<<<<<<< HEAD
-  "duration": 55200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 397800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 42100,
-=======
-  "duration": 35649400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 293332200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 891154700,
->>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 52,
-  "name": "Deve negar todos os steps \"Dado\" dos cenários anteriores",
-  "description": "",
-  "id": "aprender-cucumber;deve-negar-todos-os-steps-\"dado\"-dos-cenários-anteriores",
-  "type": "scenario",
-  "keyword": "Cenário",
+  "keyword": "Esquema do Cenario",
   "tags": [
     {
-      "line": 51,
-      "name": "@ignore"
+      "line": 2,
+      "name": "@funcionais"
     }
   ]
 });
 formatter.step({
-  "line": 53,
-  "name": "que o ticket é CD123",
-  "keyword": "Dado "
+  "line": 19,
+  "name": "informo a conta \"\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Quando "
 });
 formatter.step({
-  "line": 54,
-  "name": "que o ticket é AG1234",
-  "keyword": "Dado "
+  "line": 20,
+  "name": "seleciono Salvar",
+  "keyword": "E "
 });
 formatter.step({
-  "line": 55,
-  "name": "que o valor da passagem é R$ 1.1345,56",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 56,
-  "name": "que o nome do passageiro é \"Beltrano Souza Matos de Alcântara Azevedo\"",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 57,
-  "name": "que o telefone do passageiro é 1234-5678",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 58,
-  "name": "que o telefone do passageiro é 999-2223",
-  "keyword": "Dado "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "line": 21,
+  "name": "recebo a mensagem \"Informe o nome da conta\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Entao "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1.1345,56",
-      "offset": 29
+      "val": "",
+      "offset": 17
     }
   ],
-  "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
+  "location": "inserirContaSteps.informo_a_conta(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 52028600,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Salvar()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 354458500,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Informe o nome da conta",
+      "offset": 19
+    }
+  ],
+  "location": "inserirContaSteps.receboAMensagem(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 32870600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 346851400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 719649900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 216300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 134900,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou acessando a aplicação",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 11,
+  "name": "informo o usuario \"leonardo_ignacio2010@hotmail.com\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 12,
+  "name": "a senha \"lsb123\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 13,
+  "name": "seleciono entrar",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 14,
+  "name": "visualizo a pagina inicial",
+  "keyword": "Entao "
+});
+formatter.step({
+  "line": 15,
+  "name": "seleciono Contas",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 16,
+  "name": "seleciono Adicionar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
+});
+formatter.result({
+  "duration": 7709043900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "leonardo_ignacio2010@hotmail.com",
+      "offset": 19
+    }
+  ],
+  "location": "inserirContaSteps.informo_o_usuario(String)"
+});
+formatter.result({
+  "duration": 172194000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lsb123",
+      "offset": 9
+    }
+  ],
+  "location": "inserirContaSteps.a_senha(String)"
+});
+formatter.result({
+  "duration": 72351300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_entrar()"
+});
+formatter.result({
+  "duration": 789723300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.visualizo_a_pagina_inicial()"
+});
+formatter.result({
+  "duration": 37423400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Contas()"
+});
+formatter.result({
+  "duration": 79893800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Adicionar()"
+});
+formatter.result({
+  "duration": 411139800,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 27,
+  "name": "Deve validar regras cadastro contas",
+  "description": "",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4",
+  "type": "scenario",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionais"
+    }
+  ]
+});
+formatter.step({
+  "line": 19,
+  "name": "informo a conta \"Conta mesmo nome\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 20,
+  "name": "seleciono Salvar",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 21,
+  "name": "recebo a mensagem \"Já existe uma conta com esse nome!\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Entao "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta mesmo nome",
+      "offset": 17
+    }
+  ],
+  "location": "inserirContaSteps.informo_a_conta(String)"
+});
+formatter.result({
+  "duration": 114118500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Salvar()"
+});
+formatter.result({
+  "duration": 346931100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Já existe uma conta com esse nome!",
+      "offset": 19
+    }
+  ],
+  "location": "inserirContaSteps.receboAMensagem(String)"
+});
+formatter.result({
+  "duration": 33939700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 354355500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 746832900,
+  "status": "passed"
 });
 });
