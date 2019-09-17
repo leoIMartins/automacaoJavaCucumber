@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/features/",	//Caminho das features
 		glue = "br.ce.wcaquino.steps",		//Caminho dos steps
-		tags = {"@unitários"},				//Executa apenas os cenários/funcionalidades que possuem "@tag" -- ignora os que possuem "~@tag"
+		tags = {"@funcionais"},				//Executa apenas os cenários/funcionalidades que possuem "@tag" -- ignora os que possuem "~@tag"
 		plugin = {"pretty", "html:target/report-html", "json:target/report.json"},					//Muda a apresentação do teste no console. Entre chaves {} para permitir mais que um
 		monochrome = true,					//Tira os caracteres especiais do console após execução ou adiciona cores no terminal do SO
 		snippets = SnippetType.CAMELCASE,	//Métodos seguem padrão "queCrieiOArquivoCorretamente"

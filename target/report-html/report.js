@@ -325,11 +325,19 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
+<<<<<<< HEAD
   "duration": 469600,
   "status": "passed"
 });
 formatter.before({
   "duration": 387600,
+=======
+  "duration": 373500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 462000,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
@@ -1054,10 +1062,16 @@ formatter.step({
   "name": "eu incrementar em 3",
   "keyword": "Quando "
 });
+<<<<<<< HEAD
 formatter.step({
   "line": 17,
   "name": "o valor do contador sera 18",
   "keyword": "Entao "
+=======
+formatter.result({
+  "duration": 6613717600,
+  "status": "passed"
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
 });
 formatter.match({
   "arguments": [
@@ -1069,7 +1083,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 267400,
+=======
+  "duration": 366657200,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1079,10 +1097,24 @@ formatter.match({
       "offset": 18
     }
   ],
+<<<<<<< HEAD
   "location": "AprenderCucumberSteps.euIncrementarEm(int)"
 });
 formatter.result({
   "duration": 87700,
+=======
+  "location": "inserirContaSteps.a_senha(String)"
+});
+formatter.result({
+  "duration": 83702100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_entrar()"
+});
+formatter.result({
+  "duration": 632470300,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1095,6 +1127,7 @@ formatter.match({
   "location": "AprenderCucumberSteps.oValorDoContadorSera(int)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 257200,
   "status": "passed"
 });
@@ -1104,6 +1137,23 @@ formatter.before({
 });
 formatter.before({
   "duration": 7139900,
+=======
+  "duration": 56479300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Contas()"
+});
+formatter.result({
+  "duration": 66365000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Adicionar()"
+});
+formatter.result({
+  "duration": 337631900,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
@@ -1145,7 +1195,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 119400,
+=======
+  "duration": 137385100,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1158,7 +1212,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.euIncrementarEm(int)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 94500,
+=======
+  "duration": 525694900,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1171,6 +1229,7 @@ formatter.match({
   "location": "AprenderCucumberSteps.oValorDoContadorSera(int)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 91000,
   "status": "passed"
 });
@@ -1180,6 +1239,25 @@ formatter.before({
 });
 formatter.before({
   "duration": 139100,
+=======
+  "duration": 34575100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 302815700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 847980600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 29100,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
@@ -1207,9 +1285,22 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.step({
+<<<<<<< HEAD
   "line": 29,
   "name": "a entrega será efetuada em 07/04/2018",
   "keyword": "Então "
+=======
+  "line": 16,
+  "name": "seleciono Adicionar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "inserirContaSteps.que_estou_acessando_a_aplicação()"
+});
+formatter.result({
+  "duration": 6366886400,
+  "status": "passed"
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
 });
 formatter.match({
   "arguments": [
@@ -1221,7 +1312,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queAEntregaÉDia(Date)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 2103800,
+=======
+  "duration": 190537200,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1235,10 +1330,24 @@ formatter.match({
       "offset": 23
     }
   ],
+<<<<<<< HEAD
   "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
 });
 formatter.result({
   "duration": 441700,
+=======
+  "location": "inserirContaSteps.a_senha(String)"
+});
+formatter.result({
+  "duration": 86931200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_entrar()"
+});
+formatter.result({
+  "duration": 705701100,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1251,6 +1360,7 @@ formatter.match({
   "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 754000,
   "status": "passed"
 });
@@ -1260,6 +1370,23 @@ formatter.before({
 });
 formatter.before({
   "duration": 161300,
+=======
+  "duration": 51132500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Contas()"
+});
+formatter.result({
+  "duration": 86199900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "inserirContaSteps.seleciono_Adicionar()"
+});
+formatter.result({
+  "duration": 353391100,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
@@ -1305,7 +1432,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queAEntregaÉDia(Date)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 536400,
+=======
+  "duration": 69561000,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1322,7 +1453,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 336800,
+=======
+  "duration": 292596300,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1335,6 +1470,7 @@ formatter.match({
   "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 402100,
   "status": "passed"
 });
@@ -1344,6 +1480,25 @@ formatter.before({
 });
 formatter.before({
   "duration": 37000,
+=======
+  "duration": 40062800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 324138800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 855521500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 438000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 53400,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
@@ -1395,7 +1550,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOTicketÉAF(String,String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 93800,
+=======
+  "duration": 6512116400,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1408,7 +1567,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 380200,
+=======
+  "duration": 211274900,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1421,7 +1584,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queONomeDoPassageiroÉ(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 57400,
+=======
+  "duration": 118443000,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1434,29 +1601,46 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOTelefoneDoPassageiroÉ(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 78000,
+=======
+  "duration": 647817200,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
   "location": "AprenderCucumberSteps.criarOsSteps()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 20100,
+=======
+  "duration": 35626400,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
   "location": "AprenderCucumberSteps.oTesteVaiFuncionar()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 347900,
+=======
+  "duration": 69617500,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.before({
   "duration": 52400,
   "status": "passed"
 });
+<<<<<<< HEAD
 formatter.before({
   "duration": 25500,
+=======
+formatter.result({
+  "duration": 349299300,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
@@ -1533,7 +1717,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOValorDaPassagemÉR$(Double)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 375400,
+=======
+  "duration": 114745400,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1546,7 +1734,11 @@ formatter.match({
   "location": "AprenderCucumberSteps.queONomeDoPassageiroÉ(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 59900,
+=======
+  "duration": 319730600,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.match({
@@ -1559,6 +1751,7 @@ formatter.match({
   "location": "AprenderCucumberSteps.queOTelefoneDoPassageiroÉ(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 55200,
   "status": "passed"
 });
@@ -1568,6 +1761,17 @@ formatter.before({
 });
 formatter.before({
   "duration": 42100,
+=======
+  "duration": 35649400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 293332200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 891154700,
+>>>>>>> 53a0526af6ccc084ad6cc9c12129e43e79762164
   "status": "passed"
 });
 formatter.scenario({
